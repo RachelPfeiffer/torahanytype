@@ -1,0 +1,280 @@
+1577391586a:1:{s:8:"home.htm";a:11:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:8721:"title = "Home"
+url = "/"
+layout = "default"
+description = "Torah of all types - articles, inspiration, halacha, letters from gedolim."
+meta_title = "Torah Anytype - Home"
+is_hidden = 0
+==
+<div class="section dedication text-center">
+    <p>Today's learning is dedicated to the number of sufganiyot I have eaten this Chanukah.</p>
+</div>
+<div class="section breadcrumb">
+    <div class="row">Home</div>
+</div>
+<div class="section featured">
+    <div class="row m-t-sm">
+        <div class="col-sm-8">
+            <img src="{{'assets/images/torahanytypebanner.jpeg'|theme}}">
+        </div>
+        <div class="col-sm-4 lecture-list">
+            <div class="row">
+                <div class="col-xs-3 bold text-center border-light-tab"><a href="#">Recent</a></div>
+                <div class="col-xs-3 bold text-center bg-secondary border-light-tab"><a href="#">Watching</a></div>
+                <div class="col-xs-3 bold text-center bg-secondary border-light-tab"><a href="#">Following</a></div>
+                <div class="col-xs-3 bold text-center bg-secondary border-light-bottom"><a href="#">Popular</a></div>
+            </div>
+            <div class="row border-light-bottom border-light-right border-light-left">
+                <p class="secondary text-center bold uppercase m-t-sm">
+                    lectures added in last 7 days
+                </p>
+                <ul class="list-inline lecture-info">
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                </ul>
+            </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section maintopic m-t-md">
+    <div class="row">
+        <div class="col-xs-3 text-primary text-center uppercase rounded border-light-tab p-t-xs">Chanukah</div>
+    </div>
+    <div class="row m-t-sm border-light-bottom border-light-left border-light-right">
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+    </div>
+</div>
+<div class="section topicsliders">
+    <div class="col-sm-8">
+        <div class="row">
+            <div class="col-xs-3 text-primary text-center uppercase rounded border-light-tab p-t-xs">Chanukah</div>
+        </div>
+        <div class="row m-t-sm border-light-bottom border-light-left border-light-right">
+            <div class="col-xs-2 speech">
+                <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+                <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+                <p class="text-primary">Chanukah: How do we build our name?</p>
+                <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+                <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+            </div>
+            </div>
+    </div>
+    <div class="col-sm-4">Here's the other side</div>
+</div>";s:5:"mtime";i:1577390933;s:6:"markup";s:8533:"<div class="section dedication text-center">
+    <p>Today's learning is dedicated to the number of sufganiyot I have eaten this Chanukah.</p>
+</div>
+<div class="section breadcrumb">
+    <div class="row">Home</div>
+</div>
+<div class="section featured">
+    <div class="row m-t-sm">
+        <div class="col-sm-8">
+            <img src="{{'assets/images/torahanytypebanner.jpeg'|theme}}">
+        </div>
+        <div class="col-sm-4 lecture-list">
+            <div class="row">
+                <div class="col-xs-3 bold text-center border-light-tab"><a href="#">Recent</a></div>
+                <div class="col-xs-3 bold text-center bg-secondary border-light-tab"><a href="#">Watching</a></div>
+                <div class="col-xs-3 bold text-center bg-secondary border-light-tab"><a href="#">Following</a></div>
+                <div class="col-xs-3 bold text-center bg-secondary border-light-bottom"><a href="#">Popular</a></div>
+            </div>
+            <div class="row border-light-bottom border-light-right border-light-left">
+                <p class="secondary text-center bold uppercase m-t-sm">
+                    lectures added in last 7 days
+                </p>
+                <ul class="list-inline lecture-info">
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                    <li>
+                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
+                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
+                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
+                        <p class="inline light m-b-0">English</p>
+                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                    </li>
+                </ul>
+            </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section maintopic m-t-md">
+    <div class="row">
+        <div class="col-xs-3 text-primary text-center uppercase rounded border-light-tab p-t-xs">Chanukah</div>
+    </div>
+    <div class="row m-t-sm border-light-bottom border-light-left border-light-right">
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+        <div class="col-xs-2 speech">
+            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+            <p class="text-primary">Chanukah: How do we build our name?</p>
+            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+        </div>
+    </div>
+</div>
+<div class="section topicsliders">
+    <div class="col-sm-8">
+        <div class="row">
+            <div class="col-xs-3 text-primary text-center uppercase rounded border-light-tab p-t-xs">Chanukah</div>
+        </div>
+        <div class="row m-t-sm border-light-bottom border-light-left border-light-right">
+            <div class="col-xs-2 speech">
+                <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
+                <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
+                <p class="text-primary">Chanukah: How do we build our name?</p>
+                <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+                <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+            </div>
+            </div>
+    </div>
+    <div class="col-sm-4">Here's the other side</div>
+</div>";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:11:"description";s:74:"Torah of all types - articles, inspiration, halacha, letters from gedolim.";s:10:"meta_title";s:20:"Torah Anytype - Home";s:9:"is_hidden";s:1:"0";}}

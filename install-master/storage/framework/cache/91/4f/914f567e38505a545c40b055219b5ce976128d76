@@ -1,0 +1,30 @@
+1577391406a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:553:"<div id="footer">
+    <div class="container">
+        <hr />
+        <p>A Project Of</p>
+        <div>
+            <ul class="founders">
+                <li>
+                    <img style="max-width:35px;max-height:35px;" src="{{ 'assets/images/small bally.png'|theme }}">
+                    <span>Rachel Pfeiffer</span> <a target="_blank" href="https://yourwebelf.com">https://yourwebelf.com</a>
+                </li>
+            </ul>
+        </div>
+        <p class="muted credit">&copy; {{ "now"|date("Y") }} Rachel Pfeiffer</p>
+    </div>
+</div>
+";s:5:"mtime";i:1577004984;s:6:"markup";s:552:"<div id="footer">
+    <div class="container">
+        <hr />
+        <p>A Project Of</p>
+        <div>
+            <ul class="founders">
+                <li>
+                    <img style="max-width:35px;max-height:35px;" src="{{ 'assets/images/small bally.png'|theme }}">
+                    <span>Rachel Pfeiffer</span> <a target="_blank" href="https://yourwebelf.com">https://yourwebelf.com</a>
+                </li>
+            </ul>
+        </div>
+        <p class="muted credit">&copy; {{ "now"|date("Y") }} Rachel Pfeiffer</p>
+    </div>
+</div>";s:4:"code";N;}}

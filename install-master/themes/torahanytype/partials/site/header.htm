@@ -1,0 +1,23 @@
+<!-- Nav -->
+<nav id="layout-nav" class="navbar navbar-fixed-top navbar-autohide" role="navigation">
+    <div class="navbar topbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ 'home'|page }}"></a>
+            </div>
+            <a class="login-top button" href="#">Login/Register</a>    
+        </div>
+        <div class="collapse navbar-inverse navbar-collapse navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li class="separator hidden-xs"></li>
+                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}"><i class="fa fa-home"></i></a></li>
+                <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
+                <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
+            </ul>
+        </div>
+</nav>
