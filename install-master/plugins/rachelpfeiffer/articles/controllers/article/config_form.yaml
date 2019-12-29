@@ -1,0 +1,10 @@
+name: Article
+modelClass: RachelPfeiffer\Articles\Models\Articles
+form: $/rachelpfeiffer/articles/models/articles/fields.yaml
+defaultRedirect: rachelpfeiffer/articles/article
+create:
+    redirect: 'rachelpfeiffer/articles/article/update/:id'
+    redirectClose: rachelpfeiffer/articles/article
+update:
+    redirect: rachelpfeiffer/articles/article
+    redirectClose: rachelpfeiffer/articles/article
