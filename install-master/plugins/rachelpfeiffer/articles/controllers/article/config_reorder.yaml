@@ -1,0 +1,4 @@
+title: Article
+modelClass: RachelPfeiffer\Articles\Models\Articles
+toolbar:
+    buttons: reorder_toolbar

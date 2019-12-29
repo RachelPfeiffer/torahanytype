@@ -1,0 +1,11 @@
+plugin:
+    name: 'rachelpfeiffer.articles::lang.plugin.name'
+    description: 'rachelpfeiffer.articles::lang.plugin.description'
+    author: 'Rachel Pfeiffer'
+    icon: oc-icon-file-archive-o
+    homepage: ''
+navigation:
+    articles:
+        label: Articles
+        url: rachelpfeiffer/articles/article
+        icon: icon-life-ring

@@ -1,0 +1,19 @@
+columns:
+    title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+        valueFrom: title
+    date:
+        label: Date
+        type: date
+    author:
+        label: Author
+        type: text
+    category:
+        label: Category
+        type: text
+    content:
+        label: Content
+        type: text
