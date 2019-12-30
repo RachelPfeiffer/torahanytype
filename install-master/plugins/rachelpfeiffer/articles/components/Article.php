@@ -16,8 +16,4 @@ class Article extends ComponentBase
     {
         return [];
     }
-
-    public function getRecentArticle() {
-        return "Hello";
-    }
 }

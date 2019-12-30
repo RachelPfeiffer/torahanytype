@@ -4,7 +4,21 @@ layout = "default"
 description = "Torah of all types - articles, inspiration, halacha, letters from gedolim."
 meta_title = "Torah Anytype - Home"
 is_hidden = 0
+
+
+[article]
 ==
+use rachelpfeiffer\articles\models\Articles;
+use Carbon\Carbon;
+
+function onStart()
+{
+    $today = Carbon::today();
+    $this['listarticles'] = Articles::where('date','<',$today)->get();
+}
+==
+{{ hello }}
+
 <div class="section dedication text-center container-fluid">
     <p>Today's learning is dedicated to the number of sufganiyot I have eaten this Chanukah.</p>
 </div>
@@ -28,48 +42,15 @@ is_hidden = 0
                     lectures added in last 7 days
                 </p>
                 <ul class="list-inline lecture-info">
-                    <li>
-                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
-                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
-                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
-                        <p class="inline light m-b-0">English</p>
-                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
-                    </li>
-                    <li>
-                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
-                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
-                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
-                        <p class="inline light m-b-0">English</p>
-                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
-                    </li>
-                    <li>
-                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
-                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
-                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
-                        <p class="inline light m-b-0">English</p>
-                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
-                    </li>
-                    <li>
-                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
-                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
-                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
-                        <p class="inline light m-b-0">English</p>
-                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
-                    </li>
-                    <li>
-                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
-                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
-                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
-                        <p class="inline light m-b-0">English</p>
-                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
-                    </li>
-                    <li>
-                        <p class=" m-b-0">Parshas Mikeitz: Dreams and Gelt</p>
-                            <div class=" col-xs-6 m-t-0 p-l-0 secondary">Rabbi Shais Taub</div>
-                            <div class=" col-xs-6 text-right p-r-sm m-t-0">Dec 26th, 2019</div>
-                        <p class="inline light m-b-0">English</p>
-                        <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
-                    </li>
+                    {% for i in 0..3 %}
+                        <li>
+                            <p class=" m-b-0">{{ listarticles[i].title }}</p>
+                                <div class=" col-xs-6 m-t-0 p-l-0 secondary">{{ listarticles[i].author }}</div>
+                                <div class=" col-xs-6 text-right p-r-sm m-t-0">{{ listarticles[i].date }}</div>
+                            <p class="inline light m-b-0">English</p>
+                            <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div> 
             </div>

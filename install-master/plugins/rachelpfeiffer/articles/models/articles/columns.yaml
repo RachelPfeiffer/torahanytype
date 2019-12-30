@@ -7,7 +7,7 @@ columns:
         valueFrom: title
     date:
         label: Date
-        type: date
+        type: datetime
     author:
         label: Author
         type: text
