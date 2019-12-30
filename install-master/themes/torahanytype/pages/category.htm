@@ -1,0 +1,22 @@
+title = "Category"
+url = "/category/:category"
+layout = "default"
+meta_title = ":category"
+is_hidden = 0
+==
+<?php
+use rachelpfeiffer\articles\models\Articles;
+
+function onStart(){
+    $category = $this->param('category');
+    $this['category'] = Articles::where('category', '=', $category)->get();
+    if( !$this['category'] )
+        return Redirect::to('/404');
+}
+?>
+==
+{% for article in category %}
+    <h4><a href="{{ 'single_article'|page({id: article.id}) }}">{{ article.title }}</a></h4>
+    <h5>{{ article.author }}</h5>
+    <br>
+{% endfor %}
