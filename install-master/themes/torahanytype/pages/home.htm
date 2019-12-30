@@ -5,9 +5,9 @@ description = "Torah of all types - articles, inspiration, halacha, letters from
 meta_title = "Torah Anytype - Home"
 is_hidden = 0
 
-
 [article]
 ==
+<?php
 use rachelpfeiffer\articles\models\Articles;
 use Carbon\Carbon;
 
@@ -16,6 +16,7 @@ function onStart()
     $today = Carbon::today();
     $this['listarticles'] = Articles::where('date','<',$today)->get();
 }
+?>
 ==
 {{ hello }}
 
@@ -44,6 +45,7 @@ function onStart()
                 <ul class="list-inline lecture-info">
                     {% for i in 0..3 %}
                         <li>
+                            <a href="{{ 'single_article'|page({id: listarticles[i].id}) }}">Link to page</a>
                             <p class=" m-b-0">{{ listarticles[i].title }}</p>
                                 <div class=" col-xs-6 m-t-0 p-l-0 secondary">{{ listarticles[i].author }}</div>
                                 <div class=" col-xs-6 text-right p-r-sm m-t-0">{{ listarticles[i].date }}</div>

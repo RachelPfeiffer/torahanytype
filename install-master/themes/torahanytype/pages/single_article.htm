@@ -1,0 +1,34 @@
+title = "Single_Article"
+url = "/article/:id"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use rachelpfeiffer\articles\models\Articles;
+
+function onStart(){
+    $id = $this->param('id');
+    $this['post'] = Articles::where('id', '=', $id)->first();
+    if( !$this['post'] )
+        return Redirect::to('/404');
+}
+?>
+==
+<div class="section container-fluid">
+    <div class="row m-t-sm ">
+        <div class="col-md-10">
+            <p class="h2">{{ post.title }}</p>
+            <p class="h4">{{ post.author }}</p>
+        </div>
+        <div class="col-md-2">
+            <p class="h6">{{ post.date|date("m/d/Y") }}</p>
+        </div>
+    </div>
+    <div class="row m-t-sm">
+        <div class="article-content m-l-sm">
+           <p> {{ post.content|raw }}
+            </p>
+        </div>
+    </div>
+</div>
+
