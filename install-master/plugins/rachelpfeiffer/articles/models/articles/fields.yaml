@@ -6,7 +6,8 @@ fields:
     author:
         label: Author
         span: auto
-        type: text
+        type: dropdown
+        options: get_authors
     date:
         label: Date
         mode: datetime
