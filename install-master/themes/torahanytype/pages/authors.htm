@@ -1,0 +1,20 @@
+title = "Authors"
+url = "/authors"
+is_hidden = 0
+==
+<?php
+use rachelpfeiffer\articles\models\Articles;
+
+function onStart(){
+    $articles = Articles::get();
+    $authors = [];
+    foreach($articles as $article) {
+        if(in_array($article->author,$authors) === false) {
+            $authors[] = $article->author;
+        }
+    }
+    return $authors;
+}
+?>
+==
+<h1>Hello world!</h1>
