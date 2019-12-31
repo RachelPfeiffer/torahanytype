@@ -3,18 +3,29 @@ url = "/authors"
 is_hidden = 0
 ==
 <?php
-use rachelpfeiffer\articles\models\Articles;
+use Rainlab\User\Models\User;
+use Rachelpfeiffer\Articles\Models\Articles;
 
 function onStart(){
-    $articles = Articles::get();
-    $authors = [];
-    foreach($articles as $article) {
-        if(in_array($article->author,$authors) === false) {
-            $authors[] = $article->author;
-        }
-    }
-    return $authors;
+     $users = User::get();
+     $articles = Articles::get();
+        $authorarray = [];
+        foreach ($users as $user) {
+            if ($user->groups[0]["code"] === 'author') {
+                error_log('Now searching for '.$user->name);
+                if (Articles::where('author', $user->name)->exists() === true) {
+                    $lecturecount = Articles::where('author',$user->name)->count();
+                    error_log('found a match to ' .$user->name);
+                    $authorarray[$user->name] = ['name' => $user->name, 'lecturecount' => $lecturecount];
+                }
+            }
+        };
+        $this['authors'] = $authorarray;
 }
 ?>
 ==
 <h1>Hello world!</h1>
+{% for name in authors %}
+ <a href="{{ 'author'|page({author: name["name"]}) }}">{{ name["name"] }}</a>
+ <p>Lectures: {{ name["lecturecount"] }}</p>
+{% endfor %}
