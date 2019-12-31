@@ -1,0 +1,22 @@
+title = "Author"
+url = "/author/:author"
+layout = "default"
+description = "SIngle author page"
+is_hidden = 0
+==
+<?php
+use rachelpfeiffer\articles\models\Articles;
+
+function onStart(){
+    $author = $this->param('author');
+    $this['author'] = Articles::where('author', '=', $author)->get();
+    if( !$this['author'] )
+        return Redirect::to('/404');
+}
+?>
+==
+{% for article in author %}
+    <h4><a href="{{ 'single_article'|page({id: article.id}) }}">{{ article.title }}</a></h4>
+    <h5>{{ article.author }}</h5>
+    <br>
+{% endfor %}

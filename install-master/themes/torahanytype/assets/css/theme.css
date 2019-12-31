@@ -485,7 +485,16 @@
 .button.login-top {
   float: right;
   display: block;
-  padding: 20px;
+  padding: 60px 0 5px 0;
+}
+
+@media screen and (max-width: 750px) {
+  .button.login-top {
+    padding: 5px;
+  }
+}
+a.button.login-top {
+  color: black;
 }
 body {
   padding-top: 35px;
@@ -500,6 +509,12 @@ body {
 .breadcrumb { 
   background: none;
   padding: 0;
+}
+.slick-slider-1 .slick-slide .slide-image {
+  background-size: contain!important;
+}
+.slick-slider-1 .slick-slide .slide-image .slide-content {
+  display: none!important;
 }
 .founders {
   list-style: none;
