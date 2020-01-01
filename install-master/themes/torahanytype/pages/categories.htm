@@ -1,0 +1,28 @@
+title = "Categories"
+url = "/categories"
+layout = "default"
+meta_title = "Categories"
+is_hidden = 0
+==
+<?php
+use Rachelpfeiffer\Articles\Models\Articles;
+
+function onStart(){
+     $articles = Articles::get();
+        $categoryarray = [];
+        foreach ($articles as $article) {
+            if (in_array($article->category, $categoryarray) === false) {
+            array_push($categoryarray, $article->category);
+            }
+        };
+        $this['categories'] = $categoryarray;
+}
+?>
+==
+<h2>Topics</h2>
+<ul class="media-list">
+{% for category in categories %}
+    <li>
+        <a href="{{'category'|page({category: category}) }}">{{ category }}</a>
+    </li>
+{% endfor %}

@@ -9,14 +9,19 @@ use rachelpfeiffer\articles\models\Articles;
 
 function onStart(){
     $category = $this->param('category');
+    $this['categoryname'] = $category;
     $this['category'] = Articles::where('category', '=', $category)->get();
     if( !$this['category'] )
         return Redirect::to('/404');
 }
 ?>
 ==
+<h2>{{ categoryname }}</h2>
+<ul class="media-list">
 {% for article in category %}
-    <h4><a href="{{ 'single_article'|page({id: article.id}) }}">{{ article.title }}</a></h4>
-    <h5>{{ article.author }}</h5>
-    <br>
+    <li class="border-light-bottom">
+        <h4><a href="{{ 'single_article'|page({id: article.id}) }}">{{ article.title }}</a></h4>
+        <span class="h3 small">{{ article.author }}</span> <span class="h3 small">{{article.date|date("m/d/Y")}}</span>
+    </li>
 {% endfor %}
+</ul>
