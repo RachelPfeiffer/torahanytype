@@ -1,3 +1,6 @@
+[menu]
+menu_id = 1
+==
 <!-- Nav -->
 <nav id="layout-nav" class="navbar-autohide" role="navigation">
     <div class="navbar topbar">
@@ -13,11 +16,6 @@
             <a class="login-top button" href="#">Login/Register</a>    
         </div>
         <div class="collapse navbar-inverse navbar-collapse navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <li class="separator hidden-xs"></li>
-                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}"><i class="fa fa-home"></i></a></li>
-                <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
-                <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
-            </ul>
+            {% component "menu" selected_item=this.page.title|lower selected_item_class="active" %}
         </div>
 </nav>
