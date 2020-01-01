@@ -410,6 +410,11 @@
 .topbar {
   margin-bottom: 5px;
 }
+.bottombar {
+  background: #eeeeed;
+  border-radius: 0;
+  min-height: unset;
+}
 .layout-nav {
   background: white;
 }
@@ -505,6 +510,22 @@ body {
   margin: 0 auto;
   max-width: 1300px;
   padding-top: 15px;
+}
+.searchholder {
+  position: relative;
+}
+.search-results {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  right: 15px;
+  background: grey;
+  color: white;
+}
+
+.search-results li {
+  padding: 5px 10px;
+  width: 100%;
 }
 .breadcrumb { 
   background: none;

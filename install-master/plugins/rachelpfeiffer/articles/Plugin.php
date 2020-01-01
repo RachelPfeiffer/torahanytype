@@ -7,7 +7,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Rachelpfeiffer\Articles\Components\Article' => 'article'
+            'Rachelpfeiffer\Articles\Components\Article' => 'article',
+            'Rachelpfeiffer\Articles\Components\Search' => 'searchbox'
         ];
     }
 
