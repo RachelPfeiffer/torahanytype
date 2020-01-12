@@ -565,6 +565,12 @@ ul.lecture-info {
   overflow-y: scroll;
   max-height: 305px;
 }
+
+ul.lecture-info li {
+  width: 95%;
+  margin: 0 2.5%;
+}
+
 ul.lecture-info li:not(:last-child) {
   border-bottom: 1px dotted grey;
 }

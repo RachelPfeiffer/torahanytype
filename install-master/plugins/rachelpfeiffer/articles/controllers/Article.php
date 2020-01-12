@@ -18,7 +18,7 @@ class Article extends Controller
     }
 
     public $attachOne = [
-        'Pdf' => 'System\Models\File'
+        'pdf' => 'System\Models\File'
     ];
 
 }

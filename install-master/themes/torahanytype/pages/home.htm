@@ -44,19 +44,24 @@ function onStart()
             </div>
             <div class="row border-light-bottom border-light-right border-light-left">
                 <p class="secondary text-center bold uppercase m-t-sm">
-                    lectures added in last 7 days
+                    articles added in last 7 days
                 </p>
                 <ul class="list-inline lecture-info">
                     {% for i in 0..3 %}
                         <li>
-                            <a href="{{ 'single_article'|page({id: listarticles[i].id}) }}">Link to page</a>
-                            <a href="{{ 'category'|page({category: listarticles[i].category}) }}">Shalom</a>
-
-                            <p class=" m-b-0">{{ listarticles[i].title }}</p>
-                                <div class=" col-xs-6 m-t-0 p-l-0 secondary">{{ listarticles[i].author }}</div>
-                                <div class=" col-xs-6 text-right p-r-sm m-t-0">{{ listarticles[i].date }}</div>
+                            <p class="h4 m-b-0">{{ listarticles[i].title }}</p>
+                                <div class=" col-xs-6 m-t-0 p-l-0 secondary"><a class="secondary" href="{{ 'author'|page({author: listarticles[i].author}) }}">{{ listarticles[i].author }}</a></div>
+                                <div class=" col-xs-6 text-right p-r-sm m-t-0">{{ listarticles[i].date|date("M jS, Y") }}</div>
                             <p class="inline light m-b-0">English</p>
-                            <p class="inline p-l-md m-r-sm pull-right m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
+                            <p class="inline p-l-md m-r-sm pull-right m-b-0">
+                                {% if listarticles[i].content|length > 0 %}
+                                <a href="{{ 'single_article'|page({id: listarticles[i].id}) }}">Read Online</a> |
+                                {% endif %}
+
+                               {% if listarticles[i].pdf.path|length > 0 %}
+                                <a href="{{ listarticles[i].pdf.path }}">Download PDF</a>
+                                {% endif %}
+                            </p>
                         </li>
                     {% endfor %}
                 </ul>

@@ -24,11 +24,7 @@ fields:
         span: auto
         type: richeditor
     pdf:
-        label: 'Article PDF'
+        label: PDF
         mode: file
-        useCaption: true
-        thumbOptions:
-            mode: crop
-            extension: auto
         span: auto
         type: fileupload
