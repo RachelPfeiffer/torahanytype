@@ -2,6 +2,7 @@
 
 use Cms\Classes\ComponentBase;
 use Input;
+use DateTime;
 use Rachelpfeiffer\Articles\Models\Articles;
 
 class Search extends ComponentBase
@@ -26,7 +27,19 @@ class Search extends ComponentBase
         if ($searchinput !== '') {
             $results = Articles::where('title', 'LIKE', '%'.$searchinput.'%')->get();
             foreach ($results as $result) {
-                $searchresult.= '<li><a href="/article/'.$result->id.'">'.$result->title.'</a><br><span>'.$result->author.'</span></li>';
+                $date = new DateTime($result->date);
+                $author = $result->author;
+                $authorpage = "/author/".$author;
+                $searchresult.= '<li>
+                                    <a class="secondary" href="/article/'.$result->id.'">
+                                        <p class="m-b-0">'.$result->title.'
+                                        </p>
+                                    </a>
+                                    <p class="m-t-0"> 
+                                        <a href="'.$authorpage.'"<span><em class="primary">'.$author.'</em></span></a>
+                                        <span class="pull-right">'.$date->format('M jS, Y').'</span>
+                                    </p>
+                                </li>';
             }
             return ['#myDiv' => $searchresult];
         } else {

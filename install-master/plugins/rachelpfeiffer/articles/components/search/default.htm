@@ -5,5 +5,21 @@
                 <div class="search-results">
                     <ul id="myDiv" class="m-b-0 media-list"></ul>
                 </div>
+                <script>
+                    const searchResults = document.querySelector('.search-results');
+                    const searchBox = document.querySelector('#search');
+                    document.addEventListener('click', function(e) {
+                        searchResults.classList.add('hide');
+                    });
+                    searchBox.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        searchResults.classList.remove('hide');
+                    });
+                    searchResults.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        searchResults.classList.remove('hide');
+                    });
+
+                </script>
                 
     

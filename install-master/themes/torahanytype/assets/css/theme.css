@@ -36,6 +36,12 @@
   border-left: 1px solid #d8d9d8;
   border-right: 1px solid #d8d9d8;
 }
+.primary {
+  color: #1f3f50;
+}
+a .secondary:hover {
+  color: #1f3f50;
+}
 .secondary {
   color: #EE7B00;
 }
@@ -415,6 +421,9 @@
   border-radius: 0;
   min-height: unset;
 }
+.bottombar span {
+  line-height: 2.5;
+}
 .layout-nav {
   background: white;
 }
@@ -519,13 +528,20 @@ body {
   z-index: 1;
   top: 40px;
   right: 15px;
-  background: grey;
-  color: white;
+  box-shadow: 1px 1px 4px grey;
+  background: white;
+  width: 270px;
+  max-height: 200px;
+  overflow-y: scroll;
 }
 
 .search-results li {
   padding: 5px 10px;
   width: 100%;
+}
+
+.bottombar .search-results span {
+  line-height: unset;
 }
 .breadcrumb { 
   background: none;

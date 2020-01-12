@@ -1,6 +1,16 @@
 [menu]
 menu_id = 1
 ==
+<?php
+function onStart()
+{
+    $str = jdtojewish(gregoriantojd( date('m'), date('d'), date('Y')), true, CAL_JEWISH_ADD_GERESHAYIM); // for today
+    $str1 = iconv ('WINDOWS-1255', 'UTF-8', $str); 
+    $this['hebrewdate'] = $str1;
+
+}
+?>
+==
 <!-- Nav -->
 <nav id="layout-nav" class="navbar-autohide" role="navigation">
     <div class="navbar topbar">
@@ -19,7 +29,9 @@ menu_id = 1
             {% component "menu" selected_item=this.page.title|lower selected_item_class="active" %}
         </div>
         <div class="navbar bottombar">
-            <div class="col-xs-9">Here's the left side.</div>
+            <div class="col-xs-9">
+                <span>{{hebrewdate}} | {{ "now"|date("M jS, Y") }}</span>
+            </div>
             <div class="col-xs-3 searchholder">
                 {% component 'searchbox' %}
             </div>
