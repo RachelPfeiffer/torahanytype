@@ -3,6 +3,7 @@
 use Cms\Classes\ComponentBase;
 use Input;
 use DateTime;
+use Session;
 use Rachelpfeiffer\Articles\Models\Articles;
 
 class Search extends ComponentBase
@@ -20,12 +21,21 @@ class Search extends ComponentBase
         return [];
     }
 
+    public function onTipo()
+    {
+        Session::put('tipo', $_POST['tipo']);
+    }
     public function onSearch()
     {
         $searchinput = Input::get('searchinput');
+        $criteria = Session::get('tipo');
         $searchresult = '';
         if ($searchinput !== '') {
-            $results = Articles::where('title', 'LIKE', '%'.$searchinput.'%')->get();
+            if ($criteria === 'author') {
+                $results = Articles::where('author', 'LIKE', '%'.$searchinput.'%')->get();
+            } else {
+                $results = Articles::where('title', 'LIKE', '%'.$searchinput.'%')->get();
+            }
             foreach ($results as $result) {
                 $date = new DateTime($result->date);
                 $author = $result->author;

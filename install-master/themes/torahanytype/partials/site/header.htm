@@ -29,10 +29,10 @@ function onStart()
             {% component "menu" selected_item=this.page.title|lower selected_item_class="active" %}
         </div>
         <div class="navbar bottombar">
-            <div class="col-xs-9">
+            <div class="col-xs-8">
                 <span>{{hebrewdate}} | {{ "now"|date("M jS, Y") }}</span>
             </div>
-            <div class="col-xs-3 searchholder">
+            <div class="col-xs-4 searchholder">
                 {% component 'searchbox' %}
             </div>
         </div>
