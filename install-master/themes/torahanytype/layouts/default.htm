@@ -35,9 +35,17 @@ description = "Default layout"
         </footer>
 
         <!-- Scripts -->
+
         <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
         <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
         <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/multislider.min.js'|theme }}"></script>
+        <script>
+            $('.exampleSlider').multislider( {
+                  // endless scrolling
+                interval: 0
+            });
+        </script>
         {% framework extras %}
         {% scripts %}
 

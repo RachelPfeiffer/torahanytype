@@ -588,3 +588,21 @@ footer {
   width: 100%;
   height: auto;
 }
+.exampleSlider .item {width:20%; }
+
+.MS-content {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 5%;
+}
+
+.MS-content .item {
+  display: inline-block;
+  width: 33.3333%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 100%;
+  white-space: normal;
+  padding: 0 10px;
+}
