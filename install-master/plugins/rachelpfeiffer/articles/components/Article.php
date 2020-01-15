@@ -2,6 +2,8 @@
 
 use Cms\Classes\ComponentBase;
 use Rachelpfeiffer\Articles\Models\Articles;
+use Rainlab\User\Models\User;
+
 
 class Article extends ComponentBase
 {
@@ -28,8 +30,12 @@ class Article extends ComponentBase
     public function onRun()
 {
     $sliderArticles = Articles::paginate(15);
+    foreach ($sliderArticles as $article) {
+        $authorInfo = User::where('name',$article->author)->first();
+        error_log($authorInfo->avatar->path);
+    }
     $this->page['sliderArticles'] = $sliderArticles; 
-    error_log($this->page['sliderArticles']);
-    error_log($this->property('category'));
-}
+
+    $authors =  User::get();
+    } 
 }
