@@ -588,21 +588,54 @@ footer {
   width: 100%;
   height: auto;
 }
-.exampleSlider .item {width:20%; }
+
+.slider-wrapper {
+  position: relative;
+}
+
+.tab-content {
+  border: 1px solid white;
+  border-right-color: #dddddd;
+  border-left-color: #dddddd;
+}
 
 .MS-content {
   white-space: nowrap;
   overflow: hidden;
-  margin: 0 5%;
+  margin: 20px 5%;
 }
 
 .MS-content .item {
   display: inline-block;
-  width: 33.3333%;
+  width: 20%;
   position: relative;
   vertical-align: top;
   overflow: hidden;
   height: 100%;
   white-space: normal;
   padding: 0 10px;
+}
+
+.MS-controls {
+  position: absolute;
+  top: calc(50% - 2.5em);
+  width: 96%;
+  left: 2%;
+  right: 2%;
+}
+
+.MS-left, .MS-right {
+  display: inline-block;
+  background: rgba(1,1,1,0.03);  
+  color: #3097d1;
+  border: none;
+  font-size: 2.5em;
+}
+
+.MS-right {
+  float: right;
+}
+
+#tabs .text-primary {
+  color: #3097d1;
 }

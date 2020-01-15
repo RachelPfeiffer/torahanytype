@@ -7,7 +7,7 @@ is_hidden = 0
 
 [slider]
 slide_show_id = 1
-
+[article]
 [searchbox]
 ==
 <?php
@@ -26,7 +26,6 @@ function onStart()
     <p>Today's learning is dedicated to the number of sufganiyot I have eaten this Chanukah.</p>
 </div>
     
-
 <div class="section breadcrumb container-fluid">
     <div class="row">Home</div>
 </div>
@@ -53,6 +52,7 @@ function onStart()
                                 <div class=" col-xs-6 m-t-0 p-l-0 secondary"><a class="secondary" href="{{ 'author'|page({author: listarticles[i].author}) }}">{{ listarticles[i].author }}</a></div>
                                 <div class=" col-xs-6 text-right p-r-sm m-t-0">{{ listarticles[i].date|date("M jS, Y") }}</div>
                             <p class="inline light m-b-0">English</p>
+                            {{ listarticles[i].category }}
                             <p class="inline p-l-md m-r-sm pull-right m-b-0">
                                 {% if listarticles[i].content|length > 0 %}
                                 <a href="{{ 'single_article'|page({id: listarticles[i].id}) }}">Read Online</a> |
@@ -72,41 +72,13 @@ function onStart()
 </div>
 
 <div class="section maintopic m-t-md">
-    <!-- Set up your HTML -->
-    <div class="exampleSlider">
-        <div class="MS-content">
-            {% for i in 0..8 %}
-                    <div class="item speech">
-                        <div class="">
-                            <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
-                            <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
-                            <p class="text-primary">Chanukah: How do we build our name?</p>
-                            <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
-                            <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
-                        </div>
-                    </div>
-                {% endfor %}
-        </div>
-        <div class="MS-controls">
-            <button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-            <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-        </div>
-    </div>
+    {% component 'article' category="Chanukah" %}
 </div>
 <div class="section topicsliders">
+    <div class="row">
     <div class="col-sm-8">
-        <div class="row">
-            <div class="col-xs-3 text-primary text-center uppercase rounded border-light-tab p-t-xs">Chanukah</div>
-        </div>
-        <div class="row m-t-sm border-light-bottom border-light-left border-light-right">
-            <div class="col-xs-2 speech">
-                <img src="{{'/assets/images/thumnail1.jpg'|theme}}">
-                <p class="bold small speaker">R. Moshe Don Kestenbaum</p>
-                <p class="text-primary">Chanukah: How do we build our name?</p>
-                <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
-                <p class="inline small m-b-0">Watch | Listen | Download | <i class="fa fa-phone"></i> 98233</p>
-            </div>
-            </div>
+        {% component 'article' category="Bereishis" %}
     </div>
     <div class="col-sm-4">Here's the other side</div>
+    </div>
 </div>

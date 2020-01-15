@@ -1,3 +1,38 @@
-<p>This is the default markup for component Article</p>
+<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a class="text-primary uppercase" href="{{'category'|page({category: __SELF__.property('category')})  }}" data-toggle="tab">{{ __SELF__.property('category') }}</a></li>
+</ul>
+<div id="my-tab-content" class="tab-content">
+    <div class="tab-pane active border-light-bottom" id="red">
+        <div class="slider-wrapper {{ __SELF__.property('category') }}">
+            <div class="MS-content">
+                {% for slide in  sliderArticles %}
+                    {% if slide.category is same as(__SELF__.property('category')) %}
+                        <div class="item speech">
+                            <div class="">
+                                <img width="100%" src="{{'/assets/images/thumnail1.jpg'|theme}}">
+                                <p class="bold text-center small speaker">{{ slide.author }}</p>
+                                <p class="text-primary">{{ slide.title }}</p>
+                                <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
+                                <p class="inline small m-b-0">
+                                {% if slide.content|length > 0 %}
+                                   <a href="{{ 'single_article'|page({id: slide.id}) }}">Read Online</a> |
+                                {% endif %}
+            
+                                {% if listarticles[i].pdf.path|length > 0 %}
+                                    <a href="{{ slide.pdf.path }}">Download PDF</a>
+                                {% endif %}
+                                </p>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="MS-controls">
+                <button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
 
-<small>You can delete this file if you want</small>
+

@@ -1,6 +1,7 @@
 <?php namespace Rachelpfeiffer\Articles\Components;
 
 use Cms\Classes\ComponentBase;
+use Rachelpfeiffer\Articles\Models\Articles;
 
 class Article extends ComponentBase
 {
@@ -14,6 +15,21 @@ class Article extends ComponentBase
 
     public function defineProperties()
     {
-        return [];
+        return [
+            'category' => [
+                'title'             => 'Slider Category',
+                'description'       => 'Category to display in slider',
+                'default'           => 'Chanukah',
+                'type'              => 'string'
+           ]
+        ];
     }
+
+    public function onRun()
+{
+    $sliderArticles = Articles::paginate(15);
+    $this->page['sliderArticles'] = $sliderArticles; 
+    error_log($this->page['sliderArticles']);
+    error_log($this->property('category'));
+}
 }
