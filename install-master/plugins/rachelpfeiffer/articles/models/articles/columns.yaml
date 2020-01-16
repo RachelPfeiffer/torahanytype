@@ -8,12 +8,10 @@ columns:
     date:
         label: Date
         type: datetime
-    author:
-        label: Author
-        type: text
     category:
         label: Category
         type: text
-    content:
-        label: Content
-        type: text
+    author:
+        label: Author
+        relation: user
+        select: concat(name, ' ', surname)

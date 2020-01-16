@@ -3,11 +3,6 @@ fields:
         label: Title
         span: auto
         type: text
-    author:
-        label: Author
-        span: auto
-        type: dropdown
-        options: get_authors
     date:
         label: Date
         mode: datetime
@@ -28,3 +23,7 @@ fields:
         mode: file
         span: auto
         type: fileupload
+    user:
+        label: Author
+        select: concat(name, ' ', surname)
+        type: relation
