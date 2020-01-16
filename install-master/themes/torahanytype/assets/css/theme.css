@@ -515,10 +515,19 @@ body {
   max-width: 1300px;
   margin: auto;
 }
+section {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}}
 .section {
   margin: 0 auto;
   max-width: 1300px;
   padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .searchholder {
   position: relative;
@@ -546,6 +555,10 @@ body {
 .breadcrumb { 
   background: none;
   padding: 0;
+}
+
+.sidebar {
+    background: #dddddd;
 }
 .slick-slider-1 .slick-slide .slide-image {
   background-size: contain!important;

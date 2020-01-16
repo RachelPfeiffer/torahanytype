@@ -29,7 +29,5 @@ class Article extends ComponentBase
 {
     $sliderArticles = Articles::paginate(15);
     $this->page['sliderArticles'] = $sliderArticles; 
-    error_log($this->page['sliderArticles']);
-    error_log($this->property('category'));
 }
 }

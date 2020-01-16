@@ -7,7 +7,10 @@ is_hidden = 0
 
 [slider]
 slide_show_id = 1
+
 [article]
+category = "Chanukah"
+
 [searchbox]
 ==
 <?php
@@ -22,10 +25,6 @@ function onStart()
 }
 ?>
 ==
-<div class="section dedication text-center container-fluid">
-    <p>Today's learning is dedicated to the number of sufganiyot I have eaten this Chanukah.</p>
-</div>
-    
 <div class="section breadcrumb container-fluid">
     <div class="row">Home</div>
 </div>
@@ -79,6 +78,8 @@ function onStart()
     <div class="col-sm-8">
         {% component 'article' category="Bereishis" %}
     </div>
-    <div class="col-sm-4">Here's the other side</div>
+    <div class="col-sm-4 p-t-md">
+        <div class="sidebar"> Here's the other side</div>
+    </div>
     </div>
 </div>

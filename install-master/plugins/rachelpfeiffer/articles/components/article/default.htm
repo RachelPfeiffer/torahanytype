@@ -9,7 +9,12 @@
                     {% if slide.category is same as(__SELF__.property('category')) %}
                         <div class="item speech">
                             <div class="">
-                                <img width="100%" src="{{'/assets/images/thumnail1.jpg'|theme}}">
+                                {% if slide.user["avatar"].path %}
+                                {% set backgroundurl = slide.user["avatar"].path  %}
+                                {% else %}
+                                {% set backgroundurl = 'notebook-731212_640.jpg'|media %}
+                                {% endif %}
+                                <div style="height: 150px; background-size: cover; background-image: url( {{ backgroundurl }} );"></div>
                                 <p class="bold text-center small speaker">{{ slide.author }}</p>
                                 <p class="text-primary">{{ slide.title }}</p>
                                 <p class="small"><span class="light">Language: </span><span class="bold">English</span></p>
